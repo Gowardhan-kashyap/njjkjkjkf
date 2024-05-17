@@ -1,0 +1,70 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Howdy", "Hi there"],
+            "responses": ["Hello! How can I help you today?", "Hi there! How can I assist you?", "Hey! What can I do for you?"],
+            "context": ["", ""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Goodbye", "Bye", "See you later", "Take care", "Farewell"],
+            "responses": ["Goodbye! It was nice chatting with you.", "Bye! Have a great day.", "Take care! See you soon."],
+            "context": ["", ""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "Appreciate it"],
+            "responses": ["You're welcome!", "Glad I could help!", "No problem!"],
+            "context": ["", ""]
+        },
+        {
+            "tag": "help",
+            "patterns": ["Help", "Assistance", "Support", "How can you help me?"],
+            "responses": ["I can help you with various queries related to college activities, courses, events, etc. Just ask!", "I'm here to assist you with any questions or concerns you may have about the college. Feel free to ask me anything!"],
+            "context": ["", ""]
+        },
+        {
+            "tag": "courses",
+            "patterns": ["What courses are offered?", "Tell me about the courses", "Courses available"],
+            "responses": ["We offer a wide range of courses including Computer Science, Electrical Engineering, Mechanical Engineering, and more. Would you like to know about a specific course?"],
+            "context": ["", ""]
+        },
+        {
+            "tag": "course_details",
+            "patterns": ["Tell me about [course]", "Details of [course]", "More about [course]"],
+            "responses": ["[course] is a comprehensive program that covers topics such as ... Would you like more information about it?"],
+            "context": ["courses", ""]
+        },
+        {
+            "tag": "events",
+            "patterns": ["What events are happening?", "Tell me about upcoming events", "Events"],
+            "responses": ["We have various events planned throughout the year including seminars, workshops, cultural fests, and more. Would you like to know about a specific event?"],
+            "context": ["", ""]
+        },
+        {
+            "tag": "event_details",
+            "patterns": ["Tell me about [event]", "Details of [event]", "More about [event]"],
+            "responses": ["[event] is an exciting event where ... Would you like more information about it?"],
+            "context": ["events", ""]
+        },
+        {
+            "tag": "contact",
+            "patterns": [" How can I contact thecollege?", "College contact information", "Contact details"],
+            "responses": ["You can contact us via phone at [phone_number] or email at [email_address]. Our address is [college_address]."],
+            "context": ["", ""]
+        },
+        {
+            "tag": "website",
+            "patterns": ["What is the college website?", "College website", "Website link"],
+            "responses": ["You can visit our website at [website_link] for more information about the college."],
+            "context": ["", ""]
+        },
+        {
+            "tag": "fallback",
+            "patterns": [],
+            "responses": ["I'm sorry, I didn't understand that. Could you please rephrase?", "I'm not sure what you mean. Can you please provide more details?", "I'm still learning. Can you ask me something else?"],
+            "context": ["", ""]
+        }
+    ]
+}
